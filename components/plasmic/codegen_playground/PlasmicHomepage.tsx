@@ -280,7 +280,7 @@ function PlasmicHomepage__RenderFunc(props: {
                 {...child$Props}
               >
                 <FormItemWrapper
-                  className={classNames("__wab_instance", sty.formField__uvxF1)}
+                  className={classNames("__wab_instance", sty.formField__z69I)}
                   label={"Name"}
                   name={"name"}
                 >
@@ -289,7 +289,10 @@ function PlasmicHomepage__RenderFunc(props: {
                   />
                 </FormItemWrapper>
                 <FormItemWrapper
-                  className={classNames("__wab_instance", sty.formField__tnMo4)}
+                  className={classNames(
+                    "__wab_instance",
+                    sty.formField___3Yd6H
+                  )}
                   label={"Message"}
                   name={"message"}
                 >
@@ -298,7 +301,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   />
                 </FormItemWrapper>
                 <AntdButton
-                  className={classNames("__wab_instance", sty.button__j1Zed)}
+                  className={classNames("__wab_instance", sty.button__wsEsr)}
                   submitsForm={true}
                   type={"primary"}
                 >
@@ -306,7 +309,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     className={classNames(
                       projectcss.all,
                       projectcss.__wab_text,
-                      sty.text__stWOv
+                      sty.text__rynsQ
                     )}
                   >
                     {"Submit"}
@@ -320,7 +323,7 @@ function PlasmicHomepage__RenderFunc(props: {
             onClick={async event => {
               const $steps = {};
 
-              $steps["runActionOnForm"] = true
+              $steps["clearFields"] = true
                 ? (() => {
                     const actionArgs = {
                       tplRef: "form",
@@ -332,11 +335,30 @@ function PlasmicHomepage__RenderFunc(props: {
                   })()
                 : undefined;
               if (
-                $steps["runActionOnForm"] != null &&
-                typeof $steps["runActionOnForm"] === "object" &&
-                typeof $steps["runActionOnForm"].then === "function"
+                $steps["clearFields"] != null &&
+                typeof $steps["clearFields"] === "object" &&
+                typeof $steps["clearFields"].then === "function"
               ) {
-                $steps["runActionOnForm"] = await $steps["runActionOnForm"];
+                $steps["clearFields"] = await $steps["clearFields"];
+              }
+
+              $steps["resetFields"] = true
+                ? (() => {
+                    const actionArgs = {
+                      tplRef: "form",
+                      action: "resetFields"
+                    };
+                    return (({ tplRef, action, args }) => {
+                      return $refs?.[tplRef]?.[action]?.(...(args ?? []));
+                    })?.apply(null, [actionArgs]);
+                  })()
+                : undefined;
+              if (
+                $steps["resetFields"] != null &&
+                typeof $steps["resetFields"] === "object" &&
+                typeof $steps["resetFields"].then === "function"
+              ) {
+                $steps["resetFields"] = await $steps["resetFields"];
               }
             }}
           >
