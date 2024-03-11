@@ -456,6 +456,19 @@
           "scheme": "blackbox",
           "componentType": "component",
           "plumeType": "button"
+        },
+        {
+          "id": "B3s19ZmPKdxD",
+          "name": "ExternalAccess",
+          "type": "managed",
+          "projectId": "XALmqdRmrSVWCYtKbDVCa",
+          "renderModuleFilePath": "plasmic/codegen_playground/PlasmicExternalAccess.tsx",
+          "importSpec": {
+            "modulePath": "ExternalAccess.tsx"
+          },
+          "cssFilePath": "plasmic/codegen_playground/PlasmicExternalAccess.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [
