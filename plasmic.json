@@ -459,16 +459,56 @@
         },
         {
           "id": "B3s19ZmPKdxD",
-          "name": "TestComponent",
+          "name": "TestComponentPvt",
           "type": "managed",
           "projectId": "XALmqdRmrSVWCYtKbDVCa",
-          "renderModuleFilePath": "plasmic/codegen_playground/PlasmicTestComponent.tsx",
+          "renderModuleFilePath": "plasmic/codegen_playground/PlasmicTestComponentPvt.tsx",
           "importSpec": {
-            "modulePath": "TestComponent.tsx"
+            "modulePath": "TestComponentPvt.tsx"
           },
-          "cssFilePath": "plasmic/codegen_playground/PlasmicTestComponent.module.css",
+          "cssFilePath": "plasmic/codegen_playground/PlasmicTestComponentPvt.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "7yyk57E45CRP",
+          "name": "TestComponentExtRo",
+          "type": "managed",
+          "projectId": "XALmqdRmrSVWCYtKbDVCa",
+          "renderModuleFilePath": "plasmic/codegen_playground/PlasmicTestComponentExtRo.tsx",
+          "importSpec": {
+            "modulePath": "TestComponentExtRo.tsx"
+          },
+          "cssFilePath": "plasmic/codegen_playground/PlasmicTestComponentExtRo.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "VEs1_XRysBDn",
+          "name": "TestComponentExtRw",
+          "type": "managed",
+          "projectId": "XALmqdRmrSVWCYtKbDVCa",
+          "renderModuleFilePath": "plasmic/codegen_playground/PlasmicTestComponentExtRw.tsx",
+          "importSpec": {
+            "modulePath": "TestComponentExtRw.tsx"
+          },
+          "cssFilePath": "plasmic/codegen_playground/PlasmicTestComponentExtRw.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "11brxWskHYs7",
+          "name": "UsingTestComponents",
+          "type": "managed",
+          "projectId": "XALmqdRmrSVWCYtKbDVCa",
+          "renderModuleFilePath": "plasmic/codegen_playground/PlasmicUsingTestComponents.tsx",
+          "importSpec": {
+            "modulePath": "../pages/using-test-components.tsx"
+          },
+          "cssFilePath": "plasmic/codegen_playground/PlasmicUsingTestComponents.module.css",
+          "scheme": "blackbox",
+          "componentType": "page",
+          "path": "/using-test-components"
         }
       ],
       "icons": [
