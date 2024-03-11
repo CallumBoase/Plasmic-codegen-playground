@@ -459,14 +459,14 @@
         },
         {
           "id": "B3s19ZmPKdxD",
-          "name": "ExternalAccess",
+          "name": "TestComponent",
           "type": "managed",
           "projectId": "XALmqdRmrSVWCYtKbDVCa",
-          "renderModuleFilePath": "plasmic/codegen_playground/PlasmicExternalAccess.tsx",
+          "renderModuleFilePath": "plasmic/codegen_playground/PlasmicTestComponent.tsx",
           "importSpec": {
-            "modulePath": "ExternalAccess.tsx"
+            "modulePath": "TestComponent.tsx"
           },
-          "cssFilePath": "plasmic/codegen_playground/PlasmicExternalAccess.module.css",
+          "cssFilePath": "plasmic/codegen_playground/PlasmicTestComponent.module.css",
           "scheme": "blackbox",
           "componentType": "component"
         }
